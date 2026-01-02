@@ -1,4 +1,4 @@
-jQuery(function(f){var e=f(".button");e.hide();f(window).scroll(function(){if(f(this).scrollTop()>2300){e.fadeIn()}else{e.fadeOut()}});f('a[href^="#"]').click(function(){var j=200;var i=f(this).attr("href");var k=f(i==="#"||i===""?"html":i);var d=k.offset().top;f("body,html").animate({scrollTop:d},j,"swing");return false});var c=new Date();var h=c.getFullYear();var a=("0"+(c.getMonth()+1)).slice(-2);var g=("0"+(c.getDate()-2)).slice(-2);var b="最新情報 "+h+"年"+a+"月"+g+"日";document.getElementById("now").innerHTML=b});
+jQuery(function(f){var e=f(".button");e.hide();f(window).scroll(function(){if(f(this).scrollTop()>2300){e.fadeIn()}else{e.fadeOut()}});f('a[href^="#"]').click(function(){var j=200;var i=f(this).attr("href");var k=f(i==="#"||i===""?"html":i);var d=k.offset().top;f("body,html").animate({scrollTop:d},j,"swing");return false});var c=new Date();var h=c.getFullYear();var a=("0"+(c.getMonth()+1)).slice(-2);var g=("0"+(c.getDate()-2)).slice(-2);var b="最新情報 "+h+"年"+a+"月"+g+"日";var nowEl=document.getElementById("now");if(nowEl){nowEl.innerHTML=b}});
 
 document.querySelectorAll('.voice-btn').forEach(button => {
     button.addEventListener('click', () => {
